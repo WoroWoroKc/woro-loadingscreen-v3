@@ -1,5 +1,5 @@
-# Woro Loadingscreen v3
+# Woro LoadingScreen v3
 Woro LoadingScreen
 
-![loadingscreen](chuj.png)
+![loadingscreen](http://site14853.web1.titanaxe.com/chuj.png)
 
