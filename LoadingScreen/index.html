@@ -1,0 +1,68 @@
+ <!-- WoroWoro#3229 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Tajawal" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<!-- WoroWoro#3229 -->
+	<body>
+		<header>
+			<div class="cursor"></div>
+				<script>
+					const cursor = document.querySelector('.cursor');
+			
+					document.addEventListener('mousemove', e => {
+						cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+					})
+			
+					document.addEventListener('click', () => {
+						cursor.classList.add("expand");
+			
+						setTimeout(() => {
+							cursor.classList.remove("expand");
+						}, 500)
+					})
+				</script>
+			<div class="video-container">
+<!-- WoroWoro#3229 -->
+          <iframe src="https://www.youtube.com/embed/ur6uoxXY-7M?autoplay=1&mute=1" frameborder="0"></iframe>
+			</div>
+			<div class="text-container">
+				<div class="content">
+					<img src="https://cdn.discordapp.com/icons/819323030634627122/8dccbc044576793fff7633928caef166.png?size=128">
+					<h1>RedLeaks</h1>
+				</div>
+			</div>
+<!-- WoroWoro#3229 -->
+			<div class="link">
+				<p>https://discord.gg/z2h9UtMTYR</p>
+				<p>https://woroworo.website</p>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<span><h4 id="pausePlay">Play music | </h4> <h4 id="pausePlay1">| Stop music</h4></span>
+			</div>
+			<audio id="music" autoplay loop>
+				<source src="music.mp3" type="audio/mp3">
+			</audio>
+			<script>
+				var music = document.getElementById("music");
+				var pausePlay = document.getElementById("pausePlay");
+				var pausePlay1 = document.getElementById("pausePlay1");
+	
+				pausePlay.onclick = function(){
+					music.play();
+				}
+				pausePlay1.onclick = function(){
+					music.pause();
+				}
+			</script>
+		</header>
+	</body>
+</html>
+<!-- WoroWoro#3229 -->
